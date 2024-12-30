@@ -2,6 +2,9 @@ Blog Management API
 Overview
 This project is a comprehensive API for managing a blog platform. It leverages Django and Django REST Framework to provide endpoints for creating, updating, deleting, and retrieving blog posts. The API also supports functionalities like liking/unliking blogs, adding tags, and filtering blogs based on tags or user preferences.
 
+
+
+
 Features
 User Authentication: Ensures that only logged-in users can perform certain actions.
 Blog Management: Create, update, delete, and retrieve blog posts.
@@ -10,7 +13,10 @@ Like/Unlike Blogs: Users can like or unlike blog posts.
 Pagination: Paginate blog lists for better performance and user experience.
 Filter and Sorting: Filter blogs by tags and sort by likes.
 Media and Code Handling: Upload media files and add code snippets to blog posts.
-Endpoints
+
+
+
+
 Blog Endpoints
 GET /blogs: Retrieve a list of blogs with optional filters (tags, user-specific blogs, removed blogs) and sorting (by likes).
 GET /blogs/{blog_id}: Retrieve a specific blog by its ID.
@@ -19,36 +25,32 @@ PATCH /blogs/{blog_id}: Update an existing blog post.
 DELETE /blogs/{blog_id}: Delete a blog post or mark it as removed.
 POST /blogs/{blog_id}/like: Like a specific blog post.
 POST /blogs/{blog_id}/unlike: Unlike a specific blog post.
+
+
 Tag Endpoints
 GET /tags: Retrieve all available tags.
 POST /tags: Create a new tag.
+
+
 Installation
 Clone the repository:
-
-bash
-Copy code
 git clone https://github.com/yourusername/blog-management-api.git
 cd blog-management-api
+
 Install dependencies:
-
-bash
-Copy code
 pip install -r requirements.txt
+
 Run migrations:
-
-bash
-Copy code
 python manage.py migrate
-Create a superuser:
 
-bash
-Copy code
+Create a superuser:
 python manage.py createsuperuser
 Run the development server:
-
-bash
-Copy code
 python manage.py runserver
+
+
+
+
 Usage
 Use a tool like Postman or cURL to interact with the API endpoints.
 Ensure that you include appropriate authentication tokens in the headers for endpoints that require user authentication.
