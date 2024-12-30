@@ -34,7 +34,7 @@ POST /tags: Create a new tag.
 
 Installation
 Clone the repository:
-git clone https://github.com/yourusername/blog-management-api.git
+git clone https://github.com/pavan-gokarla/blogspot.git
 cd blog-management-api
 
 Install dependencies:
